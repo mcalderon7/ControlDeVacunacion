@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="img/coronavirus.png" alt="Logo" width="80" height="80">
+    <img src="img/coronavirus.png" alt="Logo">
   </a>
   <h3 align="center">Prueba Técnica - Control de Vacunación COVID-19</h3>
   <p align="center">
@@ -22,7 +22,7 @@ El proyecto consiste en realizar un pequeño proyecto para llevar el control y s
 
 <div align="center">
   <a href="">
-    <img src="img/arquitectura-app.png" alt="Logo" width="80" height="80">
+    <img src="img/arquitectura-app.png" alt="Logo">
   </a>
 </div>
 
