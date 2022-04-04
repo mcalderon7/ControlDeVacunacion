@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="img/coronavirus.png" alt="Logo">
+    <img src="img/coronavirus.png" alt="Logo" width="150" height="150">
   </a>
   <h3 align="center">Prueba Técnica - Control de Vacunación COVID-19</h3>
   <p align="center">
