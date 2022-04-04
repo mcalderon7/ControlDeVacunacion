@@ -71,4 +71,8 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
 ```sh
   docker-compose -f "docker-compose.yml" up -d --build
 ```
-5. El último paso sería esperar 1 minuto aproximadamente en lo que se levantan los servicios y verificar que todos hayan sido ejecutados correctamente.
+5. Esperar 1 minuto aproximadamente en lo que se levantan los servicios y verificar que todos hayan sido ejecutados correctamente.
+
+6. Una vez todos los servicios fueron levantados, se puede verificar el funcionamiento accediendo a las páginas principales:
+- Index page de los servicios: http://localhost:8080
+- Index page de la aplicación: http://localhost:8081
