@@ -40,7 +40,6 @@ La arquitectura de la aplicación fue creada de la siguiente manera:
 
 La forma correcta de levantar el entorno de la aplicación dependerá unicamente de una buena conexión a internet y de contar con las herramientas:
 
-* Angular CLI v13
 * Docker Engine
 * Docker Compose
 
@@ -61,6 +60,11 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
 
 ```sh
   cd /front-end
+```
+```sh
+  npm install
+```
+```sh
   ng build
 ```
 4. Una vez esta construida la para del front-end, regresamos a la raiz y ejecutamos el siguiente comando de docker-compose:
