@@ -4,8 +4,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://i.ibb.co/XkVVxTd/coronavirus-1.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="">
+    <img src="img/coronavirus.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Prueba Técnica - Control de Vacunación COVID-19</h3>
   <p align="center">
@@ -21,8 +21,8 @@ El proyecto consiste en realizar un pequeño proyecto para llevar el control y s
 ### Arquitectura de la aplicación
 
 <div align="center">
-  <a href="https://i.ibb.co/M6jxqD4/Diagrama-en-blanco.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="">
+    <img src="img/arquitectura-app.png" alt="Logo" width="80" height="80">
   </a>
 </div>
 
