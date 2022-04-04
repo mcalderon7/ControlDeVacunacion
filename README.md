@@ -47,23 +47,24 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
 ### Instalación
 
 1. Clona este repositorio
-   ```sh
-   git clone https://github.com/mcalderon7/ControlDeVacunacion.git
-   ```
-2. Una vez clonado, se debe proceder a descargar el JAR que levanta los servicios en Java.  Por motivos de tamaño, el JAR dentro de este [enlace](https://www.markdownguide.org/extended-syntax#heading-ids), debe ser descargado y reemplazado con el que existe en la siguiente ruta:
+```sh
+  git clone https://github.com/mcalderon7/ControlDeVacunacion.git
+```
+
+2. Una vez clonado, se debe proceder a descomprimir el archivo _back-end/src/main/resources/backend-jar.tar.xz_ que contiene el JAR que se encarga de levantar los servicios en JAVA.  **Únicamente hay que descomprimirlo y dejar el JAR en la misma ruta con el mismo nombre.**  En Linux, para descomprimirlo, sería con el siguiente comando:
 
 ```sh
-   back-end/src/main/resources
+  tar -xf backend-jar.tar.xz
 ```
 
 3. Usando la herramienta de Angular CLI, se utilizará el siguiente comando para compilar los archivos de Typescript:
 
-  ```sh
-   cd /front-end
-   ng build
-   ```
+```sh
+  cd /front-end
+  ng build
+```
 4. Una vez esta construida la para del front-end, regresamos a la raiz y ejecutamos el siguiente comando de docker-compose:
 ```sh
-   docker-compose -f "docker-compose.yml" up -d --build
-   ```
+  docker-compose -f "docker-compose.yml" up -d --build
+```
 5. El último paso sería esperar 1 minuto aproximadamente en lo que se levantan los servicios y verificar que todos hayan sido ejecutados correctamente.
