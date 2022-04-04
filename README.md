@@ -48,7 +48,7 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
 
 1. Clona este repositorio
 ```sh
-  git clone https://github.com/mcalderon7/ControlDeVacunacion.git
+  git clone --recurse-submodules https://github.com/mcalderon7/ControlDeVacunacion.git
 ```
 
 2. Una vez clonado, se debe proceder a descomprimir el archivo _back-end/src/main/resources/backend-jar.tar.xz_ que contiene el JAR que se encarga de levantar los servicios en JAVA.  **Únicamente hay que descomprimirlo y dejar el JAR en la misma ruta con el mismo nombre.**  En Linux, para descomprimirlo, sería con el siguiente comando:
