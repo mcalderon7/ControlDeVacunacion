@@ -2,33 +2,25 @@ version: '3.9'
 
 services:
 
-  frontendserver:
-    container_name: controldevacunacion-frontend
+  frontend:
+    container_name: cdv-frontend
     build: ./front-end/
-    links:
-      - "backendserver"
     depends_on:
-      - "backendserver"
-    networks:
-      - frontend-network
+      - "backend"
     ports:
       - "8081:80"
 
-  backendserver:
-    container_name: controldevacunacion-backend
+  backend:
+    container_name: cdv-backend
     build: ./back-end/
     ports:
-      - "8080"
-    links:
-      - "db:localhost"
+      - "8080:8080"
     depends_on:
       - "db"
-    networks:
-      - frontend-network
-      - backend-network
     #restart: always
   
   db:
+    container_name: mssqlserver
     image: mcr.microsoft.com/mssql/server:2019-latest
     ports:
       - 1433:1433
@@ -37,12 +29,5 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=cBShnWkAh5i7t4Je
-    networks:
-      - backend-network
+      - MSSQL_PID=Express
     restart: always
-  
-networks:
-  frontend-network:
-    driver: bridge
-  backend-network:
-    driver: bridge
