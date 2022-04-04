@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+
+  frontendserver:
+    container_name: controldevacunacion-frontend
+    build: ./front-end/
+    links:
+      - "backendserver"
+    depends_on:
+      - "backendserver"
+    networks:
+      - frontend-network
+    ports:
+      - "8081:80"
+
+  backendserver:
+    container_name: controldevacunacion-backend
+    build: ./back-end/
+    ports:
+      - "8080"
+    links:
+      - "db:localhost"
+    depends_on:
+      - "db"
+    networks:
+      - frontend-network
+      - backend-network
+    #restart: always
+  
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - 1433:1433
+    volumes:
+      - ~/apps/mssql/data:/var/lib/mssqlql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=cBShnWkAh5i7t4Je
+    networks:
+      - backend-network
+    restart: always
+  
+networks:
+  frontend-network:
+    driver: bridge
+  backend-network:
+    driver: bridge
