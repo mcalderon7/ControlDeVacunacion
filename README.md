@@ -40,6 +40,7 @@ La arquitectura de la aplicación fue creada de la siguiente manera:
 
 La forma correcta de levantar el entorno de la aplicación dependerá unicamente de una buena conexión a internet y de contar con las herramientas:
 
+* Node.js
 * Docker Engine
 * Docker Compose
 
@@ -56,7 +57,7 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
   tar -xf backend-jar.tar.xz
 ```
 
-3. Usando la herramienta de Angular CLI, se utilizará el siguiente comando para compilar los archivos de Typescript:
+3. Haciendo uso de npm, se instalarán las librerías requeridas por la aplicación.  Luego, usando la herramienta de Angular CLI, se construye la aplicación.  Los comandos a seguir son los siguientes:
 
 ```sh
   cd /front-end
