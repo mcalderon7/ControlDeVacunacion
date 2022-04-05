@@ -68,7 +68,7 @@ La forma correcta de levantar el entorno de la aplicación dependerá unicamente
 ```sh
   ng build
 ```
-4. Una vez esta construida la para del front-end, regresamos a la raiz y ejecutamos el siguiente comando de docker-compose:
+4. Una vez esta construida la parte del front-end, regresamos a la raiz y ejecutamos el siguiente comando de docker-compose:
 ```sh
   docker-compose -f "docker-compose.yml" up -d --build
 ```
